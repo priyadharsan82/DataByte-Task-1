@@ -1,4 +1,4 @@
-DataByte Inductions Task 1: Company sales plots
+DataByte Inductions Task 1: Company Sales
 ================
 
 ``` r
