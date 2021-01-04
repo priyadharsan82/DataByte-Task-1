@@ -1,6 +1,7 @@
 DataByte Inductions Task 1: Company Sales
 ================
 
+Line plot for total profit of all months.
 ``` r
 library(ggplot2)
 
@@ -17,6 +18,7 @@ print(plt)
 
 ![](Task-1---Company-Sales_files/figure-gfm/unnamed-chunk-1-1.png)<!-- -->
 
+Multiline plot for monthly sales of each product
 ``` r
 library(reshape2)
 
@@ -33,6 +35,7 @@ print(plt2)
 
 ![](Task-1---Company-Sales_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
+Pie chart for Annual sales
 ``` r
 annual_sales <- data.frame(Product = names(sales_df[,2:7]), 
                  Total_Sales= unname(colSums(sales_df[,2:7])))
@@ -41,12 +44,7 @@ labelsf <- paste(annual_sales$Product,":", round(p,1),"%", sep = " ")
 plt3 <- pie(annual_sales$Total_Sales,labels = labelsf, main = "Pie Chart for Annual
             Sales of Each Product", border = "white",
             col = rainbow(length(annual_sales[,2])))
-```
-
-![](Task-1---Company-Sales_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
-
-``` r
 print(plt3)
 ```
 
-    ## NULL
+![](Task-1---Company-Sales_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
