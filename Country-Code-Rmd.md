@@ -14,13 +14,13 @@ df1 <- df1[order(df1$Country_Name), ]
 code1 <- readline(prompt = "Enter the 1st Country Code: ")
 ```
 
-    ## Enter the 1st Country Code:
+    ## Enter the 1st Country Code: GW
 
 ``` r
 code2 <- readline(prompt = "Enter the 2nd Country Code: ")
 ```
 
-    ## Enter the 2nd Country Code:
+    ## Enter the 2nd Country Code: IN
 
 ``` r
 name1 <- df1[df1$Country_Code == code1, ][1,1]
